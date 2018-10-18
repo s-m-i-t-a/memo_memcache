@@ -17,6 +17,15 @@ defmodule MemoMemcache.MixProject do
         "coveralls.detail": :test,
         "coveralls.post": :test,
         "coveralls.html": :test
+      ],
+      docs: [
+        main: "readme",
+        extras: [
+          "README.md"
+        ],
+        groups_for_extras: [
+          Introduction: ~r/README.md/
+        ]
       ]
     ]
   end
@@ -40,7 +49,7 @@ defmodule MemoMemcache.MixProject do
       {:ex_doc, "~> 0.19", only: :dev},
       {:credo, "~> 0.9", only: [:dev, :test]},
       {:excoveralls, "~> 0.9", only: :test},
-      {:propcheck, "~> 1.1", only: :test},
+      {:propcheck, "~> 1.1", only: :test}
     ]
   end
 
