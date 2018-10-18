@@ -9,7 +9,7 @@ and memcached (specifically [Memcachir](https://github.com/peillis/memcachir)).
 ```elixir
 def deps do
   [
-    {:memo_memcache, "~> 0.1.0"}
+    {:memo_memcache, "~> 1.0.0"}
   ]
 end
 ```
