@@ -35,6 +35,7 @@ defmodule MemoMemcache.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:memcachir, "~> 3.2"},
       {:memo, "~> 1.0"},
       {:ex_doc, "~> 0.19", only: :dev},
       {:credo, "~> 0.9", only: [:dev, :test]},
